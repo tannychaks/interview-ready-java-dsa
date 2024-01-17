@@ -8,7 +8,7 @@ Thank you for your interest in contributing to `interview-ready-java-dsa`! We ap
 
 2. **Clone Your Fork**: Clone your forked repository to your local machine.
 
-```git clone https://github.com/[YourUsername]/interview-ready-java-dsa.git```
+```git clone https://github.com/tannychaks/interview-ready-java-dsa.git```
 
 3. **Set Up Branches**: Inside your local repository, set up two branches from `main`.
 - `feature-local`: For personal development. Commit all your work here.
