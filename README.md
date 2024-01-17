@@ -1,6 +1,6 @@
 # interview-ready-java-dsa
 
-Welcome to `interview-ready-java-dsa`, a comprehensive repository dedicated to mastering Data Structures and Algorithms (DSA) for coding interviews using Java. This repository is structured to provide weekly learning materials and challenges, starting with sorting techniques and two-pointer algorithms, and progressively covering more complex topics.
+Welcome to `interview-ready-java-dsa`, a comprehensive repository dedicated to mastering Data Structures and Algorithms (DSA) for coding interviews using Java. This repository, curated by `tannychaks`, is structured to provide weekly learning materials and challenges, starting with sorting techniques and two-pointer algorithms, and progressively covering more complex topics.
 
 ## About the Project
 
@@ -8,31 +8,29 @@ This project is designed to help both beginners and experienced developers enhan
 
 - **Week 1:** Sorting Techniques
 - **Week 2:** Two-Pointers Algorithms
-- **Week 3 and beyond:** Arrays, Trees, Graphs, Dynamic Programming, etc.
+- **Week 3 and beyond:** Arrays, Binary Search, Linked List, Recursion, Dynamic Programming, Trees, Graphs, Trie, etc.
 
 ## Getting Started
 
-To get started with the project, you can clone the repository and explore the various topics covered each week. Each directory in the repository is dedicated to a specific DSA topic and contains relevant Java code examples and exercises.
+To get started:
 
-## How to Contribute
-
-We encourage contributions from everyone, whether you're just starting out or are an experienced developer. To contribute, please follow the guidelines outlined in our [CONTRIBUTING.md](CONTRIBUTING.md) file.
-
-### Contributing Guidelines
-
-- Fork the repository and create a new branch for your contribution.
-- Add or update Java code related to DSA topics.
-- Ensure your code is well-documented and follows the project's coding standards.
-- Submit a pull request with a clear description of your changes.
+1. Fork the repository on GitHub.
+2. Clone your forked repository to your local machine:
+```git clone https://github.com/tannychaks/interview-ready-java-dsa.git```
+3. Explore the various topics covered each week. Each directory in the repository is dedicated to a specific DSA topic and contains relevant Java code examples and exercises.
 
 For more detailed instructions, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
+## How to Contribute
+
+Contributions are welcome from everyone. To contribute, fork the repository, make your changes, and submit a pull request. Detailed contribution guidelines are available in our [CONTRIBUTING.md](CONTRIBUTING.md) file.
+
 ## License
 
-This project is currently unlicensed, meaning all rights are reserved. A suitable open-source license may be added in the future.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Contact
 
-For any queries or suggestions, feel free to contact us.
+For any queries or suggestions, feel free to contact `tannychaks`.
 
 Happy Coding!
