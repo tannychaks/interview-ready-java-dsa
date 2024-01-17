@@ -1,46 +1,52 @@
 # Contributing to interview-ready-java-dsa
 
-Thank you for your interest in contributing to `interview-ready-java-dsa`! We appreciate your efforts to make this project a valuable resource for interview preparation in Java. Whether you're reporting a bug, proposing a new feature, or submitting a fix, your contributions are welcome.
+Thank you for your interest in contributing to `interview-ready-java-dsa`! We appreciate your efforts to make this project a valuable resource for interview preparation in Java.
 
-## We Develop with GitHub
+## Contribution Workflow
 
-We use GitHub to host code, track issues and feature requests, and accept pull requests.
+1. **Fork the Repository**: Start by forking the `interview-ready-java-dsa` repository to your own GitHub account.
 
-## GitHub Flow for Code Changes
+2. **Clone Your Fork**: Clone your forked repository to your local machine.
 
-All code changes happen through pull requests. To contribute:
+```git clone https://github.com/[YourUsername]/interview-ready-java-dsa.git```
 
-1. Fork the repo and create your branch from `main`.
-2. Make your changes and commit them.
-3. If you've added code, ensure it adheres to the coding style and add tests if applicable.
-4. Push your changes to your fork and submit a pull request to the main repository.
+3. **Set Up Branches**: Inside your local repository, set up two branches from `main`.
+- `feature-local`: For personal development. Commit all your work here.
+  ```
+  git checkout -b feature-local
+  ```
+- `feature-collab`: For preparing contributions. Cherry-pick important changes from `feature-local` to this branch.
+  ```
+  git checkout main
+  git checkout -b feature-collab
+  ```
+
+4. **Developing and Preparing Contributions**: Work on `feature-local`. Cherry-pick relevant changes to `feature-collab`. Regularly update your fork's `main` by merging `feature-collab`.
+
+```
+git checkout main
+git merge feature-collab
+git push origin main
+```
+
+5. **Creating a Pull Request**: Submit a pull request from your fork's `main` to the original `interview-ready-java-dsa` repository for review and integration.
 
 ## Coding Style
 
-We follow the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html). This style guide provides guidelines to keep our codebase consistent and easy to read. We recommend using IntelliJ IDEA as your IDE, which has built-in support for this style guide.
-
-To ensure your code conforms to the style guide, you can use the following tools:
-- **IntelliJ IDEA**: Set your code formatter to Google Style. Go to `File > Settings > Editor > Code Style > Java`, choose `Google Style` as the scheme.
-- **Checkstyle**: Integrate Checkstyle in your build process or IDE to automatically check your code against the style guide.
-
-## License
-
-Your contributions will be licensed under the MIT License. By contributing, you agree to abide by its terms.
+We adhere to the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html). Use IntelliJ IDEA for code formatting to maintain consistency. Checkstyle can also be integrated for automatic code style verification.
 
 ## Reporting Bugs and Suggesting Enhancements
 
-Use GitHub Issues to report bugs or suggest enhancements: [Open an issue](https://github.com/tannychaks/interview-ready-java-dsa/issues/new).
+Report bugs or suggest enhancements via GitHub Issues: [Open an issue](https://github.com/tannychaks/interview-ready-java-dsa/issues/new). Include a clear summary, reproduction steps, expected and actual results, and any relevant code or error messages.
 
-When reporting bugs, include:
-- A clear summary.
-- Steps to reproduce the issue.
-- Expected and actual results.
-- Any relevant code samples or error messages.
+## License
+
+Contributions are licensed under the MIT License. By contributing, you agree to abide by its terms.
 
 ## Questions or Concerns?
 
-If you have any questions or concerns about contributing, feel free to contact the project maintainers.
+For any questions or concerns about contributing, contact the project maintainers.
 
 Thank you for contributing to `interview-ready-java-dsa`!
 
----
+
