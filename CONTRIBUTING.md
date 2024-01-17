@@ -35,6 +35,9 @@ git push origin main
 
 We adhere to the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html). Use IntelliJ IDEA for code formatting to maintain consistency. Checkstyle can also be integrated for automatic code style verification.
 
+If using IntelliJ, download the google codestyle xml and import it to intellij.
+```https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml```
+
 ## Reporting Bugs and Suggesting Enhancements
 
 Report bugs or suggest enhancements via GitHub Issues: [Open an issue](https://github.com/tannychaks/interview-ready-java-dsa/issues/new). Include a clear summary, reproduction steps, expected and actual results, and any relevant code or error messages.
