@@ -7,8 +7,9 @@ Welcome to `interview-ready-java-dsa`, a comprehensive repository dedicated to m
 This project is designed to help both beginners and experienced developers enhance their skills in Java-based DSA, with a focus on interview preparation. Each week, we'll explore different DSA topics, starting with:
 
 - **Week 1:** Sorting Techniques
-- **Week 2:** Two-Pointers Algorithms
-- **Week 3 and beyond:** Arrays, Binary Search, Linked List, Recursion, Dynamic Programming, Trees, Graphs, Trie, etc.
+- **Week 2:** Two-Pointers & Fast-Slow pointers Algorithms
+- **Week 3:** Sliding Window pattern
+- **Week 4 and beyond:** Arrays, Binary Search, Linked List, Recursion, Dynamic Programming, Trees, Graphs, Trie, etc.
 
 ## Getting Started
 
