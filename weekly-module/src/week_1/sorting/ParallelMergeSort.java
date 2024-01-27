@@ -3,7 +3,13 @@ package week_1.sorting;
 import java.util.Arrays;
 import java.util.concurrent.RecursiveAction;
 import java.util.concurrent.ForkJoinPool;
+import java.util.stream.IntStream;
 
+/**
+ * This code demonstrates Merge sort for large datasets involving concurrency.
+ *
+ * @author tanmoychakraborty
+ */
 public class ParallelMergeSort {
 
   /**
@@ -14,8 +20,9 @@ public class ParallelMergeSort {
   public static void main(String[] args) {
     int[] arr = new int[]{2, 3, 4, 3, 4, 2, 1, -3, 0, -9, 0, 45, 23, 12, 0, 55, 11, -99, -34, -43,
         -55, -3/* large dataset */};
-    ForkJoinPool pool = new ForkJoinPool();
-    pool.invoke(new MergeSortTask(arr, 0, arr.length - 1));
+    try (ForkJoinPool pool = new ForkJoinPool()) {
+      pool.invoke(new MergeSortTask(arr, 0, arr.length - 1));
+    }
     System.out.println(Arrays.toString(arr));
   }
 
@@ -60,27 +67,23 @@ public class ParallelMergeSort {
     }
 
     /**
-     * Merges two sorted subarrays of arr[]. First subarray is arr[left..mid] Second subarray is
+     * Merges two sorted sub-arrays of arr[]. First sub-array is arr[left..mid] Second sub-array is
      * arr[mid+1..right]
      *
      * @param arr   The array to be merged.
-     * @param left  The starting index of the first subarray.
-     * @param mid   The ending index of the first subarray.
-     * @param right The ending index of the second subarray.
+     * @param left  The starting index of the first sub-array.
+     * @param mid   The ending index of the first sub-array.
+     * @param right The ending index of the second sub-array.
      */
     private void merge(int[] arr, int left, int mid, int right) {
       int n1 = mid - left + 1;
       int n2 = right - mid;
 
-      int[] L = new int[n1];
-      int[] R = new int[n2];
+      int[] L;
+      int[] R;
 
-      for (int i = 0; i < n1; ++i) {
-        L[i] = arr[left + i];
-      }
-      for (int j = 0; j < n2; ++j) {
-        R[j] = arr[mid + 1 + j];
-      }
+      L = IntStream.range(0, n1).map(i -> arr[left + i]).toArray();
+      R = IntStream.range(0, n2).map(j -> arr[mid + 1 + j]).toArray();
 
       int i = 0, j = 0;
 

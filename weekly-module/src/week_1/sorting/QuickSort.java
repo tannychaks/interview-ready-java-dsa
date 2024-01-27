@@ -2,6 +2,11 @@ package week_1.sorting;
 
 import java.util.Arrays;
 
+/**
+ * This code demonstrates Quick Sort technique.
+ *
+ * @author tanmoychakraborty
+ */
 public class QuickSort {
 
   public static void main(String[] args) {

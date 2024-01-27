@@ -2,6 +2,11 @@ package week_1.sorting;
 
 import java.util.Arrays;
 
+/**
+ * This code demonstrates Selection sort technique.
+ *
+ * @author tanmoychakraborty
+ */
 public class SelectionSort {
 
   public static void main(String[] args) {

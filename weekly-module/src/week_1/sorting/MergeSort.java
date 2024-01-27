@@ -1,7 +1,13 @@
 package week_1.sorting;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
+/**
+ * This code demonstrates Merge Sort technique.
+ *
+ * @author tanmoychakraborty
+ */
 public class MergeSort {
 
   public static void main(String[] args) {
@@ -45,29 +51,25 @@ public class MergeSort {
   }
 
   /**
-   * Merges two subarrays of arr[]. First subarray is arr[l..mid] Second subarray is arr[mid+1..r]
+   * Merges two sub-arrays of arr[]. First sub-array is arr[l..mid] Second sub-array is arr[mid+1..r]
    *
    * @param arr The array to be merged.
-   * @param l   The starting index of the first subarray.
-   * @param mid The ending index of the first subarray.
-   * @param r   The ending index of the second subarray.
+   * @param l   The starting index of the first sub-array.
+   * @param mid The ending index of the first sub-array.
+   * @param r   The ending index of the second sub-array.
    */
   private static void merge(int[] arr, int l, int mid, int r) {
-    // Sizes of two subarrays to be merged
+    // Sizes of two sub-arrays to be merged
     int n1 = mid - l + 1;
     int n2 = r - mid;
 
     // Create temp arrays
-    int[] left = new int[n1];
-    int[] right = new int[n2];
+    int[] left;
+    int[] right;
 
-    // Copy data to temp arrays
-    for (int i = 0; i < n1; ++i) {
-      left[i] = arr[l + i];
-    }
-    for (int j = 0; j < n2; ++j) {
-      right[j] = arr[mid + 1 + j];
-    }
+    /* Copy data to temp arrays */
+    left = IntStream.range(0, n1).map(i -> arr[l + i]).toArray();
+    right = IntStream.range(0, n2).map(j -> arr[mid + 1 + j]).toArray();
 
     // Merge the temp arrays back into arr[l..r]
     int i = 0, j = 0, k = l;

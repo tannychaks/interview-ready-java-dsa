@@ -1,5 +1,10 @@
 package week_1.sorting;
 
+/**
+ * The code demonstrates Bubble Sort technique.
+ *
+ * @author tanmoychakraborty
+ */
 public class BubbleSort {
 
   public static void main(String[] args) {
